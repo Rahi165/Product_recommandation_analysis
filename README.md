@@ -43,3 +43,22 @@ Approach -
 -- Find prod_ids with which the original user has interacted -> observed_interactions
 -- For each similar user Find 'n' products with which the similar user has interacted with but not the actual user.
 -- return the specified number of products.
+
+### 3) Model based Collaborative filtering
+
+Objective -
+- Provide personalized recommendations to users based on their past behavior and preferences, while also addressing the challenges of sparsity and scalability that can arise in other collaborative filtering techniques.
+- 
+Outputs -
+- Recommend top 5 products for a particular user.
+  
+Approach -
+
+- creating a CSR (compressed sparse row) matrix from the product rating matrix. Since only the non-zero values need to be saved, this is done to reduce the amount of memory and processing time used.
+- taking the sparse or csr matrix and applying singular value decomposition (SVD) on it. A matrix's dimensionality can be decreased by applying the SVD matrix decomposition technique. In this instance, the product rating matrix's dimensionality is decreased to 50 latent features using the SVD.
+- use SVD to determine each user's expected rating. The U matrix, the sigma matrix, and the Vt matrix are multiplied to provide the expected ratings.
+
+### Evaluating the model :
+- Calculate the average rating for all the movies by dividing the sum of all the ratings by the number of ratings. 2, Calculate the average rating for all the predicted ratings by dividing the sum of all the predicted ratings by the number of ratings.
+- Create a DataFrame called rmse_df that contains the average actual ratings and the average predicted ratings.
+- Calculate the RMSE of the SVD model by taking the square root of the mean of the squared errors between the average actual ratings and the average predicted ratings.
