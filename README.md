@@ -12,18 +12,15 @@ Objective-
 The aim is to recommend products based on their rating popularity, helping to:
 
 Highlight products with the most ratings.
-
 Introduce new customers to the most popular products.
-
 Mitigate the Cold Start Problem.
 
 Outputs
-
 Provide the top 5 products that have received at least 50 or 100 ratings/interactions.
 
 Approach
 
-Compute the average rating for each product.
-Calculate the total number of ratings each product has received.
-Organize these values into a DataFrame and sort it by the average rating.
-Develop a function to extract the top 'n' products meeting a specified minimum number of interactions.
+- Compute the average rating for each product.
+- Calculate the total number of ratings each product has received.
+- Organize these values into a DataFrame and sort it by the average rating.
+- Develop a function to extract the top 'n' products meeting a specified minimum number of interactions.
