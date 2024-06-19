@@ -3,6 +3,7 @@ The Product Recommendation System is a machine learning project that offers cust
 
 ## Dataset
 I utilized a user-rated Amazon dataset (which lacks headers) for electronic goods ratings. Each product and user is given a unique identification in place of their name or any other potentially biased information in order to prevent prejudices.
+
 Link of dataset: https://www.kaggle.com/datasets/vibivij/amazon-electronics-rating-datasetrecommendation/download?datasetVersionNumber=1
 
 ## Approach
