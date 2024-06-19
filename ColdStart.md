@@ -1,4 +1,4 @@
-#Cold Start Problem
+# Cold Start Problem
 
 **What is the cold start problem?**
 
